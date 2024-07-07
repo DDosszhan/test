@@ -1,28 +1,27 @@
 import HashSet.HashSet;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("A");
-        stringBuilder.append("B");
+        List<String> list = new ArrayList<String>();
 
-        HashSet<String> hashSet = new HashSet<String>();
+        list.add("Doszhan");
+        list.add("Orlan");
+        list.add("Danil");
 
+         list = list.stream().filter(val -> val.length()>5).collect(Collectors.toList());
 
+        System.out.println(list);
 
 
 
     }
 
-    public String concat(String a, String b) {
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(a);
-        stringBuilder.append(b);
-        return stringBuilder.toString();
-    }
 }
