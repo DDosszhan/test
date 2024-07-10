@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f05a450b-b48e-4ccd-a7c1-a89288ee9853" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ImutableClasses/ExampleImmutableClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ImutableClasses/ImmutableChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashMap/HashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashMap/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HashMap/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/test/StreamAPI/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/StreamAPI/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImutableClasses/Placement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImutableClasses/Placement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImutableClasses/RealEstate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImutableClasses/RealEstate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ImutableClasses/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImutableClasses/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/StreamAPI/StreamAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/StreamAPI/StreamAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamAPI/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamAPI/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamAPI/StreamAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamAPI/StreamAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +91,22 @@
       <workItem from="1720312455814" duration="970000" />
       <workItem from="1720338386657" duration="3356000" />
       <workItem from="1720550704256" duration="3550000" />
-      <workItem from="1720576362909" duration="5138000" />
+      <workItem from="1720576362909" duration="10725000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

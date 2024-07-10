@@ -4,15 +4,15 @@ import java.util.Objects;
 
 public class Employee {
     private int id;
-    private String first_name;
-    private String last_name;
+    private String firstName;
+    private String lastName;
     private int age;
     private int salary;
 
-    Employee(int id, String first_name, String last_name, int age, int salary) {
+    public Employee(int id, String first_name, String last_name, int age, int salary) {
         this.id = id;
-        this.first_name = first_name;
-        this.last_name = last_name;
+        this.firstName = first_name;
+        this.lastName = last_name;
         this.age = age;
         this.salary = salary;
     }
@@ -25,20 +25,20 @@ public class Employee {
         this.id = id;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAge() {
@@ -62,11 +62,24 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return id == employee.id && age == employee.age && salary == employee.salary && Objects.equals(first_name, employee.first_name) && Objects.equals(last_name, employee.last_name);
+        return id == employee.id && age == employee.age && salary == employee.salary && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, first_name, last_name, age, salary);
+        int result = 17; // Arbitrary prime number
+        result = 31 * result + id;
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + age;
+        result = 31 * result + salary;
+        return result;
+    }
+
+
+    @Override
+    public String toString() {
+        return String.format("Employee{id=%d, first_name='%s', last_name='%s', age=%d, salary=%d}",
+                id, firstName, lastName, age, salary);
     }
 }

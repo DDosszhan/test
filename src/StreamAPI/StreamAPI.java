@@ -1,6 +1,7 @@
 package StreamAPI;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class StreamAPI {
 
@@ -19,20 +20,14 @@ public class StreamAPI {
         list.add(new Employee(10, "Danil", "Preskurel", 21, 600000));
 
 
-        list.stream()
-                .min(Comparator.comparing(Employee::getAge))
-                .ifPresent(val -> System.out.println(val.getFirst_name()));
+        list = list.stream().sorted( (x, y) -> Integer.compare(x.getSalary(), y.getSalary())).collect(Collectors.toList());
 
+        System.out.println(list.get(9));
 
+        long count = list.stream().count();
+        System.out.println(count);
 
-        Employee employee1 = new Employee(10, "Danil", "Preskurel", 21, 600000);
-        Employee employee2 = new Employee(10, "Danil", "Preskurel", 21, 600000);
-        System.out.println(employee1.hashCode());
-        System.out.println(employee2.hashCode());
-        HashMap<Employee, Integer> hashMap = new HashMap<Employee, Integer>();
-        employee1.setAge(20);
-        hashMap.put(employee1, 1);
-        System.out.println(hashMap.get(employee2));
+        System.out.println(list.stream().anyMatch(val -> val.getSalary()>999999));
 
 
 
