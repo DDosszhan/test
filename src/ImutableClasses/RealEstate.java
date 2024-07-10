@@ -1,5 +1,6 @@
 package ImutableClasses;
 
+
 public class RealEstate {
     private int id;
     private String name;
