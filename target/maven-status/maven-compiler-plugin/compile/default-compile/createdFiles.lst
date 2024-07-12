@@ -1,0 +1,5 @@
+com\example\ServiceInjector.class
+com\example\Services\MessageService.class
+com\example\MyApplication.class
+com\example\Services\EmailService.class
+com\example\Main.class
